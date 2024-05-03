@@ -21,7 +21,10 @@ form.addEventListener('submit', e => {
   }, 0);
 
   //   show result:
+  scrollTo(0, 0);
   console.log(score);
   result.querySelector('span').textContent = `${score}%`;
   result.classList.remove('d-none');
 });
+
+// window object (global object)
