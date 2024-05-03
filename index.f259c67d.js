@@ -1,0 +1,2 @@
+var correctAnswers=["B","B","B","B"],form=document.querySelector(".quiz-form"),result=document.querySelector(".result");form.addEventListener("submit",(function(e){e.preventDefault();var r=[form.q1.value,form.q2.value,form.q3.value,form.q4.value].reduce((function(e,r,o){return r===correctAnswers[o]?e+25:e}),0);scrollTo(0,0),console.log(r),result.querySelector("span").textContent="".concat(r,"%"),result.classList.remove("d-none")}));
+//# sourceMappingURL=index.f259c67d.js.map
